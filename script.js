@@ -15,3 +15,12 @@ const discountover = Number((pricebigl / 100) * 40)
 const over = Number(pricebigl - discountover)
 // PREZZO BIGLIETTO CON DUE UNITà DECIMALI ALLA FINE
 const priceover = Number(over.toFixed(2))
+if (età < 18){
+    console.log(priceunder)
+}
+else if(età >= 65){
+    console.log(priceover)
+}
+else{
+    console.log(pricebigl)
+}
